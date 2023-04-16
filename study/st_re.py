@@ -55,7 +55,8 @@ def demo02():
     r = obj.finditer(s)
     for i in r:
         print(i.group('ID'), i.group('Name'))
-    # [('10086', '中国移动'), ('10010', '中国联通')]
+    # 10086 中国移动
+    # 10010 中国联通
 
 if __name__ == '__main__':
     # demo01()

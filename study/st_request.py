@@ -1,7 +1,6 @@
 import requests
 import pprint
-
-
+from lxml import etree
 
 def ex01_get():
     """
@@ -26,7 +25,8 @@ def ex02_post():
     data = {
         'kw':'dog'
     }  
-    resp = requests.post(url, data=data, headers=header) 
+    resp = requests.post(url, data=data, headers=header)
+    
     print(resp.json())
     
     
